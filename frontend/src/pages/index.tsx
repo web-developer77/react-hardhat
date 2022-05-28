@@ -6,6 +6,7 @@ import { Text, Button } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import ReadERC20 from "../components/ReadERC20";
+import TransferERC20 from "../components/TransferERC20";
 
 declare let window: any;
 
@@ -108,19 +109,13 @@ const Home: NextPage = () => {
           />
         </Box>
 
-        <LinkBox my={4} p={4} w="100%" borderWidth="1px" borderRadius="lg">
-          <NextLink
-            href="https://github.com/NoahZinsmeister/web3-react/tree/v6"
-            passHref
-          >
-            <LinkOverlay>
-              <Heading my={4} fontSize="xl">
-                Task 3 with link
-              </Heading>
-              <Text>Read docs of Web3-React V6</Text>
-            </LinkOverlay>
-          </NextLink>
-        </LinkBox>
+        <Box  mb={0} p={4} w='100%' borderWidth="1px" borderRadius="lg">
+          <Heading my={4}  fontSize='xl'>Transfer Classtoken</Heading>
+          <TransferERC20 
+            addressContract='0x4cA79b37B5d20a10Ee1c69F4564D661CBC359033'
+            currentAccount={currentAccount}
+          />
+        </Box>
       </VStack>
     </>
   );

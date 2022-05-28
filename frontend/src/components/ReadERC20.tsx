@@ -22,6 +22,29 @@ export default function ReadERC20(props: Props) {
     if (!currentAccount) return;
 
     queryTokenBalance(window);
+    const provider = new ethers.providers.Web3Provider(window.ethereum)
+    const erc20 = new ethers.Contract(addressContract, abi, provider)
+
+    // listen for changes on an Ethereum address
+    console.log(`listening for Transfer...`)
+
+    const fromMe = erc20.filters.Transfer(currentAccount, null)
+    provider.on(fromMe, (from, to, amount, event) => {
+        console.log('Transfer|sent', { from, to, amount, event })
+        queryTokenBalance(window)
+    })
+
+    const toMe = erc20.filters.Transfer(null, currentAccount)
+    provider.on(toMe, (from, to, amount, event) => {
+        console.log('Transfer|received', { from, to, amount, event })
+        queryTokenBalance(window)
+    })
+
+    // remove listener when the component is unmounted
+    return () => {
+        provider.removeAllListeners(toMe)
+        provider.removeAllListeners(fromMe)
+    }    
   }, [currentAccount]);
 
   async function queryTokenBalance(window: any) {
