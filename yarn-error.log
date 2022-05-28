@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Eros\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+  C:\Program Files\nodejs\node.exe C:\Users\Eros\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @openzeppelin/contracts
 
 PATH: 
   C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\01_tools\spring-3.0.0-SNAPSHOT\bin;D:\01_tools\gradle-7.4.2\bin;D:\01_tools\apache-maven-3.8.5\bin;C:\xampp\php;C:\composer;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Eros\AppData\Roaming\npm;C:\Program Files\dotnet\;C:\Program Files (x86)\NetSarang\Xshell 7\;C:\Program Files (x86)\NetSarang\Xftp 7\;C:\Users\Eros\AppData\Local\Microsoft\WindowsApps;C:\Users\Eros\AppData\Roaming\Composer\vendor\bin;C:\Users\Eros\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Eros\AppData\Roaming\npm;C:\Users\Eros\.dotnet\tools
