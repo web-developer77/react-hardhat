@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Eros\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\01_tools\spring-3.0.0-SNAPSHOT\bin;D:\01_tools\gradle-7.4.2\bin;D:\01_tools\apache-maven-3.8.5\bin;C:\xampp\php;C:\composer;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Eros\AppData\Roaming\npm;C:\Program Files\dotnet\;C:\Program Files (x86)\NetSarang\Xshell 7\;C:\Program Files (x86)\NetSarang\Xftp 7\;C:\Users\Eros\AppData\Local\Microsoft\WindowsApps;C:\Users\Eros\AppData\Roaming\Composer\vendor\bin;C:\Users\Eros\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Eros\AppData\Roaming\npm;C:\Users\Eros\.dotnet\tools
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\03_projects\react-hardhat\node_modules\keccak\prebuilds\win32-x64\node.napi.node'
+
+npm manifest: 
+  {
+    "name": "hardhat-project",
+    "devDependencies": {
+      "@nomiclabs/hardhat-ethers": "^2.0.0",
+      "@nomiclabs/hardhat-waffle": "^2.0.0",
+      "chai": "^4.2.0",
+      "ethereum-waffle": "^3.0.0",
+      "ethers": "^5.0.0",
+      "hardhat": "^2.9.6"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

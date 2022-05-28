@@ -30,6 +30,8 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 
   // uncomment this and run: yarn deploy-rinkeby
   networks: {
+    hardhat: {
+    },
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/0c430968c9bd401fa95f3d48ad84a45f`,
       accounts: ["0x827fd6b44e118fc8bbea6a65a201d3c69f49619c2eb74f946e14f0bf1d68f98c"],
